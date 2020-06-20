@@ -40,42 +40,9 @@ docker start crayon
 
 You can now view logs at `localhost:8888` in your browser. To run DREAM, Deep CFR or SD-CFR with custom hyperparameters in
 any Poker game supported by PokerRL, build a script similar to the ones in the root directory of this repo. Run-scripts define
-the hyperparameters, the game to be played, and the evaluation metrics. Here is a very minimalistic example showing a
-few of the available settings:
+the hyperparameters, the game to be played, and the evaluation metrics.
 
-```
-from PokerRL.game.games import StandardLeduc  # or any other game
-
-from DeepCFR.EvalAgentDeepCFR import EvalAgentDeepCFR
-from DeepCFR.TrainingProfile import TrainingProfile
-from DeepCFR.workers.driver.Driver import Driver
-
-if __name__ == '__main__':
-    ctrl = Driver(t_prof=TrainingProfile(name="SD-CFR_LEDUC_EXAMPLE",
-    
-                                         eval_agent_export_freq=20,  # export API to play against the agent
-                                         
-                                         max_buffer_size_adv=3e6,
-                                         n_traversals_per_iter=1500,
-                                         n_batches_adv_training=750,
-                                         init_adv_model="last", # "last" or "random"
-
-                                         game_cls=StandardLeduc, # The game to play     
-                                         
-                                         eval_modes_of_algo=(
-                                             EvalAgentDeepCFR.EVAL_MODE_SINGLE,  # Single Deep CFR (SD-CFR)
-                                         ),
-
-                                         DISTRIBUTED=False, # Run locally
-                                         ),
-                  eval_methods={
-                      "br": 3, # evaluate Best Response every 3 iterations.
-                  })
-    ctrl.run()
-```
-Note that you can specify one or both averaging methods under `eval_modes_of_algo`.
-Choosing both is useful to compare them as they will share the value networks! However, we showed in [2] that SD-CFR
-is expected to perform better, is faster, and requires less memory.
+Note that you can specify one or both averaging methods under `eval_modes_of_algo`. "Single" is the method introduced in [2] and also used in DREAM, and "AVG_NET" is the method used by Deep CFR [3]. Single is generally better [2]. We showed in [2] that SD-CFR is expected to perform better, is faster, and requires less memory.
                                          
 
 ## Cloud & Clusters
