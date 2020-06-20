@@ -1,6 +1,9 @@
 # DREAM: Deep Regret minimization with Advantage baselines and Model-free learning. 
-A scalable implementation of [DREAM](https://arxiv.org/abs/2006.10410) [1], [Single Deep CFR (SD-CFR)](https://arxiv.org/pdf/1901.07621.pdf) [2], and [Deep CFR (SD-CFR)](https://arxiv.org/pdf/1811.00164.pdf) [3] in the
-[PokerRL](https://github.com/TinkeringCode/PokerRL) framework. Finds equilibria in any game.
+A scalable implementation of [DREAM](https://arxiv.org/abs/2006.10410) [1]. DREAM is the state-of-the-art (June 2020) in multi-agent model-free Deep RL [1]. Here is a graph showing how fast various model-free algorithms converge in a poker game:
+![DREAM_Convergence](img/DREAM_Leduc_Plot.png)
+
+Also includes implementations of [Single Deep CFR (SD-CFR)](https://arxiv.org/pdf/1901.07621.pdf) [2], and [Deep CFR (SD-CFR)](https://arxiv.org/pdf/1811.00164.pdf) [3], and [Neural Fictitious Self-Play (NFSP)](https://arxiv.org/pdf/1603.01121.pdf) [4]. in the
+[PokerRL](https://github.com/TinkeringCode/PokerRL) framework.
 
 This codebase is designed for:
 - Researchers to compare new methods to these baselines.
@@ -110,7 +113,7 @@ If you use this repository in your research, you can cite it by citing PokerRL a
 
 
 ## Code Authors
-* **[Eric Steinberger](https://twitter.com/EricSteinb)**
+* **Eric Steinberger - [Twitter] (https://twitter.com/EricSteinb)**
 
 
 
@@ -129,3 +132,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [2] Steinberger, Eric. "Single Deep Counterfactual Regret Minimization." arXiv preprint arXiv:1901.07621 (2019).
 
 [3] Brown, Noam, et al. "Deep Counterfactual Regret Minimization." arXiv preprint arXiv:1811.00164 (2018).
+
+[4] Heinrich, Johannes, and David Silver. "Deep reinforcement learning from self-play in imperfect-information games." arXiv preprint arXiv:1603.01121 (2016).
