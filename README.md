@@ -1,6 +1,6 @@
 # DREAM: Deep Regret minimization with Advantage baselines and Model-free learning. 
-A scalable implementation of [DREAM](https://arxiv.org/abs/2006.10410) [1]. DREAM is the state-of-the-art (June 2020) in multi-agent model-free Deep RL [1]. Here is a graph showing how fast various model-free algorithms converge in a poker game:
-![DREAM_Convergence](img/DREAM_Leduc_Plot.png)
+A scalable implementation of [DREAM](https://arxiv.org/abs/2006.10410) [1]. DREAM is the state-of-the-art (June 2020) in multi-agent model-free Deep RL [1]. Here are two graphs showing how fast various model-free algorithms converge in the poker games Flop Hold'em and Leduc:
+![DREAM_Convergence](DREAM_plots.png)
 
 Also includes implementations of [Single Deep CFR (SD-CFR)](https://arxiv.org/pdf/1901.07621.pdf) [2], and [Deep CFR (SD-CFR)](https://arxiv.org/pdf/1811.00164.pdf) [3], and [Neural Fictitious Self-Play (NFSP)](https://arxiv.org/pdf/1603.01121.pdf) [4]. in the
 [PokerRL](https://github.com/TinkeringCode/PokerRL) framework.
