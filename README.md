@@ -113,7 +113,7 @@ If you use this repository in your research, you can cite it by citing PokerRL a
 
 
 ## Code Authors
-* **Eric Steinberger - [Twitter] (https://twitter.com/EricSteinb)**
+* **Eric Steinberger - [Twitter](https://twitter.com/EricSteinb)**
 
 
 
