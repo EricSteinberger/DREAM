@@ -3,7 +3,7 @@ A scalable implementation of [DREAM](https://arxiv.org/abs/2006.10410) [1]. DREA
 
 ![DREAM_Convergence](DREAM_plots.png)
 
-Also includes implementations of [Single Deep CFR (SD-CFR)](https://arxiv.org/pdf/1901.07621.pdf) [2], and [Deep CFR (SD-CFR)](https://arxiv.org/pdf/1811.00164.pdf) [3], and [Neural Fictitious Self-Play (NFSP)](https://arxiv.org/pdf/1603.01121.pdf) [4] in the [PokerRL](https://github.com/TinkeringCode/PokerRL) framework.
+Also includes implementations of [Single Deep CFR (SD-CFR)](https://arxiv.org/pdf/1901.07621.pdf) [2], [Deep CFR](https://arxiv.org/pdf/1811.00164.pdf) [3], and [Neural Fictitious Self-Play (NFSP)](https://arxiv.org/pdf/1603.01121.pdf) [4] in the [PokerRL](https://github.com/TinkeringCode/PokerRL) framework.
 
 This codebase is designed for:
 - Researchers to compare new methods to these baselines.
